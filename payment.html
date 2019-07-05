@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment| Flight Booking App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- favicons -->
+   
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicons -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-responsive-style.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="script/all-plugins.js"></script>
+    <script type="text/javascript" src="script/plugin-active.js"></script>
+</head>
+<body data-spy="scroll" data-target=".main-navigation" data-offset="150">
+    <section id="MainContainer">
+        <!-- Header starts here -->
+        <header id="Header">
+            <nav class="main-navigation">
+                <div class="container clearfix">
+                    <div class="site-logo-wrap">
+                        <a class="logo" href="index.html"><img src="images/FlyMe.png" alt="Fly Me Logo"></a>
+                    </div>
+                    <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
+                    <div class="main-menu hidden-md-down">
+                        <ul class="menu-list">
+                            <li><a class="nav-link " href="index.html" data-target="#Search"><img src="images/search.svg">Search</a></li>
+                            <li><a class="nav-link" href="explore.html" data-target="#Explore"><img src="images/explore.svg">Explore</a></li>
+                            <li><a class="nav-link" href="trips.html" data-target="#Trips"><img src="images/trips.svg">Trips</a></li>
+                            <li><a class="nav-link" href="account.html" data-target="#Account"><img src="images/account.svg">Account</a></li>
+                            <li><a class="nav-link" href="login.html" data-target="#Login">Login/ Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-menu hidden-lg-up">
+                    <ul class="mobile-menu-list">
+                        <li><a class="nav-link " href="index.html" data-target="#Search"><img src="images/search.svg">Search</a></li>
+                        <li><a class="nav-link" href="explore.html" data-target="#Explore"><img src="images/explore.svg">Explore</a></li>
+                        <li><a class="nav-link" href="trips.html" data-target="#Trips"><img src="images/trips.svg">Trips</a></li>
+                        <li><a class="nav-link" href="account.html" data-target="#Account"><img src="images/account.svg">Account</a></li>
+                        <li><a class="nav-link" href="login.html" data-target="#Login">Login/ Register</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Header ends here -->
+        <!-- Banner starts here -->
+        <section id="HeroBanner">
+            <div class="hero-content">
+                <div class="container hero-container">
+                    <h1>Payment</h1>
+                    <div class="hero-outer-wrapper">
+                        <div class="form-wrap">
+                            <form  action="" method="post" class="form-box">
+                                <div class="row">
+                                    <div class="profile-tabs ml-auto mr-auto mb-3">
+                                        <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                                            <li class="nav-item">
+                                            <a class="nav-link active" href="#visa" role="tab" data-toggle="tab">
+                                                Visa
+                                            </a>
+                                            </li>
+                                            <li class="nav-item">
+                                            <a class="nav-link" href="#mastercard" role="tab" data-toggle="tab">
+                                                Mastercard
+                                            </a>
+                                            </li>
+                                            <li class="nav-item">
+                                            <a class="nav-link" href="#paypal" role="tab" data-toggle="tab">
+                                                Paypal
+                                            </a>
+                                            </li>
+                                        </ul>
+                                       
+                                        <div class="form-row ">
+                                            <div class="accname floating-label col-md-4">
+                                                <input type="text" class="floating-input" name="accname" id="accname-field" required >
+                                                <label for="accname-field">Account Name</label>
+                                            </div>
+                                            <div class="cardnum floating-label col-md-4">
+                                                <input type="text" class="floating-input" name="cardnum" id="cardnum-field" required>
+                                                <label for="cardnum-field">Credit/ Debit Card Number</label>
+                                            </div>
+                                            <div class="exp floating-label col-md-3">
+                                                <input type="text" class="floating-input" name="exp" id="exp-field" required >
+                                                <label for="exp-field">Expiration Date</label>
+                                            </div>
+                                            <div class="cvc floating-label col-md-1">
+                                                <input type="text" class="floating-input" name="cvc" id="cvc-field" required>
+                                                <label for="cvc-field">CVC</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row ">
+                                            <div class="email floating-label col-md-4">
+                                                <input type="email" class="floating-input" name="email" id="email-field" required >
+                                                <label for="email-field">E-mail</label>
+                                            </div>
+                                            <div class="phonenum floating-label col-md-4">
+                                                <input type="text" class="floating-input" name="phonenum" id="phonenum-field" required>
+                                                <label for="phonenum-field">Phone Number</label>
+                                            </div>
+                                            <div class="country floating-label col-md-3">
+                                                <input type="text" class="floating-input" name="country" id="country-field" required >
+                                                <label for="country-field">Country</label>
+                                            </div>
+                                            <div class="postal floating-label col-md-1">
+                                                <input type="text" class="floating-input" name="postal" id="postal-field" required>
+                                                <label for="postal-field">Postal #</label>
+                                            </div>
+                                        </div>
+                                        <a href="checkout.html" class="submit btn btn-primary btn-pill mt-3 mb-5">Checkout</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>           
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner ends here -->
+
+    </section>
+</body>
+
+</html>
